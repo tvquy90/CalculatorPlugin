@@ -11,29 +11,28 @@ import org.json.JSONObject;
  * This class echoes a string called from JavaScript.
  */
 public class CalculatorPlugin extends CordovaPlugin {
-    PerformTask pf= new PerformTask();
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         int firstNum = args.getInt(0);
         int secondNum = args.getInt(1);
         if(action.equals("add")) {
-            int res1 = pf.add(firstNum,secondNum);
+            int res1 =firstNum + secondNum;
             String mes1 = Integer.toString(res1);
             this.sendResponeToUI(mes1, callbackContext);
             return true;
         }else if (action.equals("sub")) {
-            int res2 = pf.sub(firstNum,secondNum);
+            int res2 = firstNum - secondNum;
             String mes2 = Integer.toString(res2);
             this.sendResponeToUI(mes2, callbackContext);
             return true;
         }else if (action.equals("mul")) {
-            int res3 = pf.mul(firstNum,secondNum);
+            int res3 = firstNum * secondNum;
             String mes3 = Integer.toString(res3);
             this.sendResponeToUI(mes3, callbackContext);
             return true;
         }else if (action.equals("div")) {
-            int res4 = pf.div(firstNum,secondNum);
+            int res4 = firstNum / secondNum;
             String mes4 = Integer.toString(res4);
             this.sendResponeToUI(mes4, callbackContext);
             return true;
