@@ -4,7 +4,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android">
 	<name>CalculatorPlugin</name>
 	<js-module name="CalculatorPlugin" src="www/CalculatorPlugin.js">
-		<clobbers target="window.plugins" />
+		<clobbers target="window.plugins.CalculatorPlugin" />
 	</js-module>
 	<platform name="android">
 		<config-file parent="/*" target="res/xml/config.xml">
