@@ -3,10 +3,20 @@
   "version": "0.1.1",
   "cordova": {
     "id": "cordova-plugin-calculator",
-    "platforms": []
+    "platforms": ["android"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tvquy90/CalculatorPlugin.git"
   },
   "keywords": [
     "ecosystem:cordova"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
   ],
   "author": "",
   "license": "ISC",
