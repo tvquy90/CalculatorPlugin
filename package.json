@@ -1,0 +1,14 @@
+{
+  "name": "cordova-plugin-calculator",
+  "version": "0.1.1",
+  "cordova": {
+    "id": "cordova-plugin-calculator",
+    "platforms": []
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
